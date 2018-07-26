@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.admin.mobile_security.login_signup">
+
+
+    <Button
+        android:id="@+id/btnlogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="48dp"
+        android:layout_marginRight="48dp"
+        android:onClick="login"
+        android:layout_marginTop="212dp"
+        android:layout_toLeftOf="@+id/btnsignup"
+        android:layout_toStartOf="@+id/btnsignup"
+        android:text="Login" />
+
+    <Button
+        android:id="@+id/btnsignup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/btnlogin"
+        android:layout_alignParentEnd="true"
+        android:onClick="signup"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="77dp"
+        android:layout_marginRight="77dp"
+        android:text="Sign Up" />
+
+    <Button
+        android:id="@+id/btnlogout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnsignup"
+        android:layout_alignLeft="@+id/btnlogin"
+        android:layout_alignStart="@+id/btnlogin"
+        android:layout_marginBottom="21dp"
+        android:layout_marginLeft="19dp"
+        android:layout_marginStart="19dp"
+        android:text="Logout" />
+
+    <Button
+        android:id="@+id/loction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btnlogout"
+        android:layout_alignStart="@+id/btnlogout"
+        android:layout_below="@+id/btnlogin"
+        android:layout_marginTop="76dp"
+        android:onClick="location"
+        android:text="location" />
+</RelativeLayout>
